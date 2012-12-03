@@ -1,2 +1,2 @@
 #!/bin/bash
-sbatch -A b2010008 -p core -t 00:01:00 --qos=short ~/bin/sbatch_job "bash $@"
+sbatch -A b2010008 -p core -t 00:01:00 --qos=short --wrap "bash $@"
